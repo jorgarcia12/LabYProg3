@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <!-- navBar -->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">INDEX</a>
+            </li>
+            <li>
+                <a href="enlaces.html">ENLACES</a>
+            </li>
+            <li>
+                <a href="listas.html">LISTAS</a>
+            </li>
+        </ul>
+    </nav>
+    <h1 style="background-color: blueviolet; margin: 15px; ">Formularios</h1>
+
+    <form id="form">
+        <!-- Nombre: requerido, formato tipo texto -->
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" pattern="[A-Za-z\s]{2,}" required />
+        <br>
+
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" id="apellido" pattern="[A-Za-z\s]{2,}" required>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="tel">Telefono: </label>
+        <input type="number" name="tel" id="tel" pattern="\d{7,15}" required>
+        <br>
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad" min="1" max="100">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+</body>
+
+</html>

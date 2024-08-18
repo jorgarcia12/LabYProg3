@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 4.1 y 4.2 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tfoot {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        thead {
+            background-color: gray;
+            font-weight: bold;
+        }
+
+        .c1 {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4>NAVEGACION:</h4>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="css.html">CSS</a>
+                    </li>
+                    <li>
+                        <a href="javascript.html">JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/?hl=es" target="_blank">Investiga sobre tu cuenta!</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1>Que es HTML?</h1>
+            <p>HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear y estructurar
+                páginas web. Se utiliza para definir la estructura básica de un sitio web, incluyendo elementos como
+                títulos, párrafos, enlaces, imágenes, tablas, formularios y otros componentes. <br>
+                HTML no es un lenguaje de programación; en cambio, es un lenguaje de marcado, lo que significa que
+                utiliza
+                etiquetas para anotar y definir partes del contenido en una página web. Estas etiquetas se colocan entre
+                corchetes angulares y suelen venir en pares, con una etiqueta de apertura y una etiqueta de cierre.</p>
+            <section>
+                <img src="img/html5.png" alt="html5 logo" width="200">
+            </section>
+        </div>
+        <div>
+            <h2>Como comenzar un documento HTML</h2>
+            <ol>
+                <li>
+                    <h3>Crear un archivo HTML</h3>
+                    <p>Abre un editor de texto (como Visual Studio Code, Sublime Text, o incluso el Bloc de notas).</p>
+                    <p>Crea un nuevo archivo y guárdalo con la extensión .html. Por ejemplo, index.html.</p>
+                </li>
+                <li>
+                    <h3>Escribir la estructura basica</h3>
+                    <p>Dentro de la estructura basica tenemos varias secciones importantes como: DOCTYPE,etiqueta head,
+                        etiquetas de metadatos, body</p>
+                </li>
+                <li>
+                    <h3>Agregar contenido al cuerpo</h3>
+                    <p>Debemos agregar dentro de nuestro body encabezados, parrafos, imagenes, etc.</p>
+                </li>
+                <li>
+                    <h3>Guardar y visualizar la pagina</h3>
+                    <p>Guarda el archivo después de agregar el contenido.</p>
+                    <p>Abre el archivo .html en un navegador web (puedes hacer doble clic en el archivo o abrirlo desde
+                        el
+                        navegador).</p>
+                </li>
+                <li>
+                    <h3>Agregar mas contenido y elementos</h3>
+                    <p>A medida que aprendas más sobre HTML, puedes agregar diferentes tipos de elementos, como listas,
+                        tablas, imágenes, formularios, etc.</p>
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h4>HTML nos permite agregar tambien videos:</h4>
+            <video controls width=" 500px">
+                <source
+                    src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
+                    type="video/mp4">
+                video no soportado
+            </video>
+        </div>
+        <div>
+            <h4>Permite Agregar audios</h4>
+            <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls></audio>
+        </div>
+        <div>
+            <h4>Tambien podemos insertar tablas para organizar datos</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna1</th>
+                        <th>Columna2</th>
+                        <th>Columna3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="c1">Fila1, Celda1</td>
+                        <td>Fila1, Celda2</td>
+                        <td>Fila1, Celda3</td>
+                    </tr>
+                    <tr>
+                        <td class="c1">Fila2, Celda1</td>
+                        <td>Fila2, Celda2</td>
+                        <td>Fila2, Celda3</td>
+                    </tr>
+                    <tr>
+                        <td class="c1">Fila3, Celda1</td>
+                        <td>Fila3, Celda2</td>
+                        <td>Fila3, Celda3</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>total 1</td>
+                        <td>total 2</td>
+                        <td>total 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <h4>Formularios</h4>
+        <form>
+            <fieldset>
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" pattern="[A-Za-z\s]{2,}"
+                        required />
+                </div>
+                <div>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" pattern="[A-Za-z\s]{2,}"
+                        required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="example@example.com" required>
+                </div>
+                <div>
+                    <label for="tel">Telefono: </label>
+                    <input type="number" name="tel" id="tel" placeholder="numero de telefono" pattern="\d{7,15}"
+                        required>
+                </div>
+                <div>
+                    <label for="edad">Edad: </label>
+                    <input type="number" name="edad" id="edad" placeholder="edad" min="1" max="100">
+                </div>
+                <div>
+                    <textarea placeholder="observaciones" au></textarea>
+                </div>
+                <button type="submit"> Enviar Formulario</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h5>Jorge Garcia Ojeda Comision 3</h5>
+    </footer>
+</body>
+
+</html>
