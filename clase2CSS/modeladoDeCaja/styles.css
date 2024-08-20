@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+.caja{
+    width: 400px;
+    height: 400px;
+    background-color: midnightblue;
+    border: 2px solid black;
+    border-radius: 4%;
+    margin: 1rem;
+    padding: 1rem;    
+}
+
+.cajaRelativa{
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    position: relative;
+}
+.cajaAnimacion{
+    width: 500px;
+    height: 500px;
+    background-color: orangered;
+    margin: auto;
+    position: absolute;
+    top: 60%;
+    animation: 2s cambioColor infinite;
+}
+
+@keyframes cambioColor {
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: orangered;
+    }
+    100%{
+        background-color: red;
+    }
+}

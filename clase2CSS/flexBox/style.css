@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.contenedorFlex {
+    background-color: khaki;
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja {
+    border: 2px solid;
+    font-size: 1rem;
+    text-align: center;
+    margin: 5px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(68, 161, 238);
+    margin-top: 20px;
+}
+
+.flexItems{
+    background-color: rgb(100, 228, 228);
+    padding: 5px;
+    border: 8px;
+    text-align: center;
+}
+
+.flexItems:nth-child(2){
+    flex-grow: 0.4;
+}
